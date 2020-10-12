@@ -1,5 +1,13 @@
 @import "abstracts/variables";
 
-body {
-  background-color: red;
-}
+@import "base/base";
+@import "base/animations";
+@import "base/typography";
+@import "base/utilities";
+
+@import "components/button";
+
+@import "layout/container";
+@import "layout/header";
+
+@import "pages/home";

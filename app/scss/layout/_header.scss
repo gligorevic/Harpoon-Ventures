@@ -1,9 +1,74 @@
 .header {
-  height: 90vh;
+  height: 95vh;
   background-image: linear-gradient(
-      to left bottom,
-      rgba($color-blue-light, 0.8),
-      rgba($color-blue-dark, 0.8)
+      to top right,
+      rgba($bg-color-blue-medium, 0.9) 50%,
+      rgba($bg-color-blue-dark, 0.9) 50%
     ),
     url(../img/boats.png);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  letter-spacing: 1px;
+
+  &__logo-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &__logo {
+    height: 11rem;
+
+    animation: moveInUpFront 1.25s ease-out backwards;
+  }
+
+  &__info-box {
+    animation: fadeInHeaderInfo 0.2s ease-in 1.15s backwards;
+    text-align: center;
+    position: absolute;
+    bottom: 0.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  &__arrows-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: moveInTop 0.4s ease-in-out 1.5s backwards;
+
+    .arrow {
+      cursor: pointer;
+
+      &:first-child {
+        margin-bottom: -6px;
+        animation: blink 2s infinite 1s;
+      }
+
+      &:not(:nth-child(2)) {
+        opacity: 0.6;
+        transform: scale(0.85);
+      }
+
+      &:nth-child(2) {
+        opacity: 1;
+        animation: blink 2s infinite 1.5s;
+      }
+
+      &:last-child {
+        margin-top: -6px;
+        animation: blink 2s infinite;
+      }
+    }
+    &:hover .arrow {
+      animation: none;
+
+      &:not(:nth-child(2)) {
+        opacity: 0.2;
+      }
+    }
+  }
 }
