@@ -1,0 +1,22 @@
+@font-face {
+  font-family: "futura";
+  src: url(../../css/fonts/FuturaStdCondensed.woff);
+  font-style: normal;
+  font-weight: 400;
+}
+
+body {
+  font-family: "futura", sans-serif;
+  font-weight: 400;
+  line-height: 1.8;
+  color: $color-grey-dark;
+}
+
+.heading-tertiary {
+  font-size: 2rem;
+
+  &--address {
+    display: block;
+    text-transform: uppercase;
+  }
+}

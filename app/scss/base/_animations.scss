@@ -1,0 +1,85 @@
+@keyframes fillButton {
+  $i: 0;
+  @while $i <= 100 {
+    #{$i * 1%} {
+      width: calc(50% + #{$i / 2 * 1%});
+      background-image: linear-gradient(
+        to right top,
+        $color-blue-light calc(50% + #{$i / 2 * 1%}),
+        transparent calc(50% - #{$i / 2 * 1%})
+      );
+    }
+    $i: $i + 4;
+  }
+}
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem);
+  }
+
+  80% {
+    transform: translateX(-1rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveInUpFront {
+  0% {
+    opacity: 0;
+    transform: translateY(17rem) scale(0.7);
+  }
+
+  50%,
+  65% {
+    opacity: 0.5;
+    transform: translateY(0) scale(0.7);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0) scale(1);
+  }
+}
+
+@keyframes fadeInHeaderInfo {
+  0% {
+    opacity: 0;
+    transform: scale(0.85) translate(-50%, 2rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1) translate(-50%, 0);
+  }
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0.7;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes moveInTop {
+  0% {
+    opacity: 0;
+    transform: translateY(3rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
