@@ -1,0 +1,36 @@
+.composition {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  transform: scale(1.15) rotate(45deg);
+  margin: 8rem auto;
+
+  &__photo {
+    background-color: red;
+    width: 47.5%;
+    margin-bottom: 5%;
+    padding-bottom: 47.5%;
+
+    &--p3 {
+      background: transparent;
+    }
+
+    &--p1 {
+      background: url(../../img/notes.jpg) rgba($color-blue-dark, 0.5);
+      background-size: cover;
+      background-position: center;
+      background-blend-mode: multiply;
+    }
+
+    &--p2 {
+      background: $color-blue-light;
+    }
+
+    &--p4 {
+      background: url(../../img/newspaper.jpg) rgba($color-blue-dark, 0.5);
+      background-size: cover;
+      background-position: center;
+      background-blend-mode: multiply;
+    }
+  }
+}
