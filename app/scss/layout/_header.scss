@@ -1,0 +1,9 @@
+.header {
+  height: 90vh;
+  background-image: linear-gradient(
+      to left bottom,
+      rgba($color-blue-light, 0.8),
+      rgba($color-blue-dark, 0.8)
+    ),
+    url(../img/boats.png);
+}
