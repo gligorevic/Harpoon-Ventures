@@ -289,6 +289,13 @@ body {
     transform: translateY(-1px);
     box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.4); }
 
+.btn--outlined {
+  color: white;
+  border: 2px solid #56bcbb;
+  position: relative;
+  z-index: 2;
+  transition: all 0.5s; }
+
 .btn--animated {
   animation: moveInRight 0.5s ease-out 0.75s backwards; }
 
