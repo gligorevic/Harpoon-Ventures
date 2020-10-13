@@ -10,10 +10,22 @@
   margin-top: 8rem;
 }
 
+.u-margin-top-very-big {
+  margin-top: 14rem;
+}
+
 .u-float-right {
   float: right;
 }
 
 .u-text-white {
   color: $color-white;
+}
+
+.u-text-primary {
+  color: $color-blue-dark;
+}
+
+.u-display-flex {
+  display: flex;
 }

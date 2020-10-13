@@ -1,1 +1,21 @@
+@mixin clearfix {
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
 
+@mixin colWidth($a, $b) {
+  width: calc(
+    #{$a} * ((100% - ((#{$b} - 1) * #{$gutter-horizontal})) / #{$b}) + ((
+            #{$a} - 1
+          ) * #{$gutter-horizontal})
+  );
+}
+
+@mixin photoBox {
+  width: 47.5%;
+  margin-bottom: 5%;
+  padding-bottom: 47.5%;
+}

@@ -1,0 +1,25 @@
+.row {
+  margin: 0 auto;
+
+  [class^="col-"] {
+    float: left;
+
+    &:not(:last-child) {
+      margin-right: $gutter-horizontal;
+    }
+  }
+
+  @include clearfix;
+
+  .col-5-of-12 {
+    @include colWidth(5, 12);
+  }
+
+  .col-7-of-12 {
+    @include colWidth(7, 12);
+  }
+
+  .col-6-of-12 {
+    @include colWidth(6, 12);
+  }
+}

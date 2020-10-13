@@ -1,0 +1,44 @@
+.composition {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  transform: scale(1.15) rotate(45deg);
+  margin: 8rem auto;
+
+  &__empty-box {
+    @include photoBox;
+  }
+
+  &__photo {
+    @include photoBox;
+    backdrop-filter: blur(1px);
+    transition: transform 0.2s;
+
+    &--p1 {
+      background: url(../../img/notes.jpg) rgba($color-blue-dark, 0.5);
+      background-size: cover;
+      background-position: center;
+      background-blend-mode: multiply;
+    }
+
+    &--p2 {
+      background: $color-blue-light;
+    }
+
+    &--p4 {
+      background: url(../../img/newspaper.jpg) rgba($color-blue-dark, 0.5);
+      background-size: cover;
+      background-position: center;
+      background-blend-mode: multiply;
+    }
+
+    &:hover {
+      transform: scale(1.05);
+      box-shadow: 0 1rem 1.5rem rgba($color-black, 0.6);
+    }
+  }
+
+  &:hover &__photo:not(:hover) {
+    transform: scale(0.95);
+  }
+}
