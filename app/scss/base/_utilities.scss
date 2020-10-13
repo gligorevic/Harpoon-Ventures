@@ -26,6 +26,21 @@
   color: $color-blue-dark;
 }
 
+.u-width-2-of-3 {
+  width: (2 / 3) * 100%;
+}
+
 .u-display-flex {
   display: flex;
+}
+
+.u-center-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.u-text-blue-light {
+  color: $color-blue-light;
 }

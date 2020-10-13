@@ -15,7 +15,7 @@
     transition: transform 0.2s;
 
     &--p1 {
-      background: url(../../img/notes.jpg) rgba($color-blue-dark, 0.5);
+      background: url(../../img/notes.jpg) rgba($bg-color-blue-dark, 0.35);
       background-size: cover;
       background-position: center;
       background-blend-mode: multiply;
@@ -26,7 +26,7 @@
     }
 
     &--p4 {
-      background: url(../../img/newspaper.jpg) rgba($color-blue-dark, 0.5);
+      background: url(../../img/newspaper.jpg) rgba($bg-color-blue-dark, 0.35);
       background-size: cover;
       background-position: center;
       background-blend-mode: multiply;
