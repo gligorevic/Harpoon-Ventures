@@ -441,6 +441,11 @@ body {
       .header__arrows-box:hover .arrow:not(:nth-child(2)) {
         opacity: 0.2; }
 
+.footer {
+  font-size: 1.4rem;
+  height: 4rem;
+  background: #56bcbb; }
+
 .row {
   margin: 0 auto; }
   .row [class^="col-"] {
