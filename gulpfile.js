@@ -16,6 +16,11 @@ gulp.task("scss", function () {
     );
 });
 
+function reload(done) {
+  browserSync.reload();
+  done();
+}
+
 gulp.task(
   "watch",
   gulp.series("scss", function () {
@@ -25,7 +30,7 @@ gulp.task(
       },
     });
     gulp.watch("app/scss/**/*.scss", gulp.series("scss"));
-    gulp.watch("app/*.html", browserSync.reload);
-    gulp.watch("app/js/**/*.js", browserSync.reload);
+    gulp.watch("app/*.html", reload);
+    gulp.watch("app/js/**/*.js", reload);
   })
 );

@@ -1,4 +1,15 @@
 .section-about {
-  padding-top: 7rem;
-  padding-bottom: 10rem;
+  padding: $section-padding-top-bottom 0;
+}
+
+.section-portfolio {
+  padding: $section-padding-top-bottom 0;
+  background-image: linear-gradient(
+      0deg,
+      rgba($bg-color-blue-dark, 0.9),
+      rgba($bg-color-blue-dark, 0.9)
+    ),
+    url(../img/camera.png);
+  background-size: cover;
+  background-position: center;
 }

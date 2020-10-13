@@ -22,4 +22,8 @@
   .col-6-of-12 {
     @include colWidth(6, 12);
   }
+
+  .col-8-of-12 {
+    @include colWidth(8, 12);
+  }
 }
