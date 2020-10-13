@@ -217,6 +217,9 @@ body {
 .u-margin-top-very-big {
   margin-top: 14rem; }
 
+.u-margin-right-small {
+  margin-right: 2rem; }
+
 .u-float-right {
   float: right; }
 
@@ -468,3 +471,9 @@ body {
 
 .section-advisors {
   padding: 9rem 0; }
+
+.section-investors {
+  padding: 9rem 0;
+  background-image: linear-gradient(0deg, rgba(18, 32, 45, 0.9), rgba(18, 32, 45, 0.9)), url(../img/desk.png);
+  background-size: cover;
+  background-position: center; }

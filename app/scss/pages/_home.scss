@@ -17,3 +17,15 @@
 .section-advisors {
   padding: $section-padding-top-bottom 0;
 }
+
+.section-investors {
+  padding: $section-padding-top-bottom 0;
+  background-image: linear-gradient(
+      0deg,
+      rgba($bg-color-blue-dark, 0.9),
+      rgba($bg-color-blue-dark, 0.9)
+    ),
+    url(../img/desk.png);
+  background-size: cover;
+  background-position: center;
+}
