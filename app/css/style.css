@@ -262,13 +262,16 @@ body {
   justify-content: space-between;
   transform: scale(1.15) rotate(45deg);
   margin: 8rem auto; }
-  .composition__photo {
-    background-color: red;
+  .composition__empty-box {
     width: 47.5%;
     margin-bottom: 5%;
     padding-bottom: 47.5%; }
-    .composition__photo--p3 {
-      background: transparent; }
+  .composition__photo {
+    width: 47.5%;
+    margin-bottom: 5%;
+    padding-bottom: 47.5%;
+    backdrop-filter: blur(1px);
+    transition: transform 0.2s; }
     .composition__photo--p1 {
       background: url(../../img/notes.jpg) rgba(46, 84, 112, 0.5);
       background-size: cover;
@@ -281,6 +284,11 @@ body {
       background-size: cover;
       background-position: center;
       background-blend-mode: multiply; }
+    .composition__photo:hover {
+      transform: scale(1.05);
+      box-shadow: 0 1rem 1.5rem rgba(0, 0, 0, 0.6); }
+  .composition:hover .composition__photo:not(:hover) {
+    transform: scale(0.95); }
 
 .container {
   padding: 0 2rem;

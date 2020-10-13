@@ -5,15 +5,14 @@
   transform: scale(1.15) rotate(45deg);
   margin: 8rem auto;
 
-  &__photo {
-    background-color: red;
-    width: 47.5%;
-    margin-bottom: 5%;
-    padding-bottom: 47.5%;
+  &__empty-box {
+    @include photoBox;
+  }
 
-    &--p3 {
-      background: transparent;
-    }
+  &__photo {
+    @include photoBox;
+    backdrop-filter: blur(1px);
+    transition: transform 0.2s;
 
     &--p1 {
       background: url(../../img/notes.jpg) rgba($color-blue-dark, 0.5);
@@ -32,5 +31,14 @@
       background-position: center;
       background-blend-mode: multiply;
     }
+
+    &:hover {
+      transform: scale(1.05);
+      box-shadow: 0 1rem 1.5rem rgba($color-black, 0.6);
+    }
+  }
+
+  &:hover &__photo:not(:hover) {
+    transform: scale(0.95);
   }
 }

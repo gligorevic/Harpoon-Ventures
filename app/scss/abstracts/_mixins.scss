@@ -13,3 +13,9 @@
           ) * #{$gutter-horizontal})
   );
 }
+
+@mixin photoBox {
+  width: 47.5%;
+  margin-bottom: 5%;
+  padding-bottom: 47.5%;
+}
