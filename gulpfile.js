@@ -22,7 +22,7 @@ function reload(done) {
 }
 
 gulp.task(
-  "watch",
+  "serve",
   gulp.series("scss", function () {
     browserSync.init({
       server: {

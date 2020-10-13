@@ -1,0 +1,65 @@
+.advisor {
+  display: flex;
+
+  &__image {
+    flex-basis: 20rem;
+    position: relative;
+    opacity: 0.9;
+    transition: transform 0.2s;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 0;
+      height: 100%;
+      background-color: rgba(255, 255, 255, 0.4);
+      transition: none;
+    }
+
+    .avatar {
+      border-radius: 100%;
+    }
+
+    &:hover {
+      opacity: 1;
+      transform: scale(1.05) translateY(-4px);
+
+      .avatar {
+        box-shadow: 0 1rem 1rem rgba($color-black, 0.3);
+      }
+
+      &::after {
+        width: 120%;
+        background-color: rgba(255, 255, 255, 0);
+        transition: all 0.4s ease-in-out;
+      }
+    }
+  }
+
+  &__details {
+    &-name {
+      color: $color-blue-light;
+      font-size: 1.8rem;
+    }
+
+    &-positions {
+      list-style: none;
+      line-height: 2.2;
+      font-family: "open-sans";
+      font-weight: 400;
+      color: $color-gray-dark;
+      font-size: 1.5rem;
+      list-style-position: inside;
+
+      li::before {
+        content: "\25CF";
+        color: $color-blue-dark;
+        font-weight: bold;
+        display: inline-block;
+        width: 1.5em;
+      }
+    }
+  }
+}

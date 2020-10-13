@@ -26,6 +26,10 @@
   color: $color-blue-dark;
 }
 
+.u-text-right {
+  text-align: right;
+}
+
 .u-width-2-of-3 {
   width: (2 / 3) * 100%;
 }
@@ -43,4 +47,14 @@
 
 .u-text-blue-light {
   color: $color-blue-light;
+}
+
+.u-position-relative {
+  position: relative;
+  height: 100%;
+}
+
+.u-position-absolute-bottom {
+  position: absolute;
+  bottom: 0px;
 }
