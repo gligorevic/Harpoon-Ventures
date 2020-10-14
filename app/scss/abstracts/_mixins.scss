@@ -18,4 +18,42 @@
   width: 47.5%;
   margin-bottom: 5%;
   padding-bottom: 47.5%;
+
+  @include respond(tab-port) {
+    width: 18%;
+    margin-bottom: 1%;
+    padding-bottom: 18%;
+  }
+
+  @include respond(phone) {
+    width: 25%;
+    margin-bottom: 1%;
+    padding-bottom: 25%;
+  }
+}
+
+@mixin buttonCommon {
+  color: white;
+  border: 2px solid $color-blue-light;
+  position: relative;
+  z-index: 2;
+  transition: all 0.5s;
+}
+
+@mixin respond($breakpoint) {
+  @if $breakpoint == phone {
+    @media (max-width: 37.5em) {
+      @content;
+    }
+  }
+  @if $breakpoint == tab-port {
+    @media (max-width: 56.25em) {
+      @content;
+    }
+  }
+  @if $breakpoint == tab-land {
+    @media (max-width: 75em) {
+      @content;
+    }
+  }
 }

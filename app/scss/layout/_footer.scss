@@ -1,5 +1,7 @@
 .footer {
-  font-size: 1.4rem;
+  font-size: $small-font-size;
   height: 4rem;
   background: $color-blue-light;
+  font-family: "open-sans";
+  font-weight: 400;
 }

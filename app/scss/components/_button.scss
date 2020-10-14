@@ -5,16 +5,12 @@
     display: inline-block;
     padding: 0.6rem 6rem;
     text-transform: uppercase;
-    font-size: 1.8rem;
+    font-size: $big-font-size;
     letter-spacing: 2px;
   }
 
   &--primary {
-    color: white;
-    border: 2px solid $color-blue-light;
-    position: relative;
-    z-index: 2;
-    transition: all 0.5s;
+    @include buttonCommon;
 
     &::after {
       z-index: -1;
@@ -46,6 +42,10 @@
       transform: translateY(-1px);
       box-shadow: 0 1rem 1rem rgba($color-black, 0.4);
     }
+  }
+
+  &--outlined {
+    @include buttonCommon;
   }
 
   &--animated {

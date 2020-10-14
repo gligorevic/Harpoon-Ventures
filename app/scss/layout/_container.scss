@@ -1,5 +1,13 @@
 .container {
   padding: 0 $container-min-padding;
   max-width: $container-max-width;
+
+  @include respond(tab-port) {
+    max-width: $container-max-width-tab-port;
+  }
+
+  @include respond(phone) {
+    max-width: $container-max-width;
+  }
   margin: 0 auto;
 }
