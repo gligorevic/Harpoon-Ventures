@@ -82,12 +82,12 @@ body {
 .paragraph {
   font-family: "open-sans";
   font-weight: 400;
-  font-size: 1.5rem;
+  font-size: $medium-font-size;
   color: rgba($color-gray-dark, 0.9);
   line-height: 2.2;
 }
 
 .sidenote {
   font-family: "open-sans-italic";
-  font-size: 1.5rem;
+  font-size: $medium-font-size;
 }
