@@ -12,6 +12,9 @@
 
 .u-margin-top-very-big {
   margin-top: 14rem;
+  @include respond(tab-land) {
+    margin-top: 10rem;
+  }
 }
 
 .u-margin-right-small {
@@ -61,4 +64,91 @@
 .u-position-absolute-bottom {
   position: absolute;
   bottom: 0px;
+}
+
+.u-tab-port-flex-column {
+  @include respond(tab-port) {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+}
+
+.u-phone-full-width {
+  @include respond(phone) {
+    width: 100% !important;
+    margin-right: 0 !important;
+  }
+}
+
+.u-tab-port-full-width {
+  @include respond(tab-port) {
+    width: 100% !important;
+    margin-right: 0 !important;
+  }
+}
+
+.u-tab-land-text-center {
+  @include respond(tab-land) {
+    text-align: center;
+  }
+}
+
+.u-tab-port-text-center {
+  @include respond(tab-port) {
+    text-align: center;
+  }
+}
+
+.u-phone-text-center {
+  @include respond(phone) {
+    text-align: center;
+  }
+}
+
+.u-tab-port-margin-top-small {
+  @include respond(tab-port) {
+    margin-top: 2rem;
+  }
+}
+
+.u-tab-port-margin-top-medium {
+  @include respond(tab-port) {
+    margin-top: 4rem;
+  }
+}
+
+.u-phone-margin-right-none {
+  @include respond(phone) {
+    margin-right: 0;
+  }
+}
+
+.u-phone-margin-top-small {
+  @include respond(phone) {
+    margin-top: 2rem;
+  }
+}
+
+.u-phone-margin-top-medium {
+  @include respond(phone) {
+    margin-top: 4rem;
+  }
+}
+
+.u-phone-margin-top-big {
+  @include respond(phone) {
+    margin-top: 8rem;
+  }
+}
+
+.u-phone-display-block {
+  @include respond(phone) {
+    display: block;
+  }
+}
+
+.u-phone-position-relative {
+  @include respond(phone) {
+    position: relative;
+  }
 }

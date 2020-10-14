@@ -4,6 +4,10 @@
   position: relative;
   transition: transform 0.2s;
 
+  @include respond(tab-port) {
+    width: 100%;
+  }
+
   &:hover {
     transform: translateY(-3px);
 

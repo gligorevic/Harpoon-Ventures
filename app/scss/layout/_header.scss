@@ -21,6 +21,10 @@
   &__logo {
     height: 11rem;
 
+    @include respond(phone) {
+      height: 7rem;
+    }
+
     animation: moveInUpFront 1.25s ease-out backwards;
   }
 

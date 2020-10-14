@@ -1,11 +1,25 @@
 .advisor {
   display: flex;
 
+  @include respond(tab-land) {
+    flex-direction: column;
+  }
+
   &__image {
     flex-basis: 20rem;
     position: relative;
     opacity: 0.9;
     transition: transform 0.2s;
+
+    @include respond(tab-land) {
+      flex-basis: 22rem;
+      align-self: center;
+      text-align: center;
+    }
+
+    @include respond(tab-port) {
+      align-self: center;
+    }
 
     &::after {
       content: "";
@@ -52,6 +66,15 @@
       color: $color-gray-dark;
       font-size: 1.5rem;
       list-style-position: inside;
+
+      @include respond(tab-land) {
+        align-self: center;
+        display: inline-block;
+
+        li {
+          text-align: left;
+        }
+      }
 
       li::before {
         content: "\25CF";

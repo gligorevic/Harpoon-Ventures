@@ -5,30 +5,50 @@
   transform: scale(1.15) rotate(45deg);
   margin: 8rem auto;
 
+  @include respond(tab-port) {
+    transform: none;
+    justify-content: center;
+    margin-bottom: 2rem;
+    margin-top: 6rem;
+  }
+
   &__empty-box {
     @include photoBox;
+    @include respond(tab-port) {
+      display: none;
+    }
   }
 
   &__photo {
     @include photoBox;
     transition: transform 0.2s;
 
+    @include respond(tab-port) {
+      transform: rotate(45deg);
+    }
+
     &--p1 {
-      background: url(../../img/notes.jpg) rgba($bg-color-blue-dark, 0.35);
+      background: url(../../img/notes.jpg) rgba($bg-color-blue-dark, 0.45);
       background-size: cover;
       background-position: center;
       background-blend-mode: multiply;
+      z-index: 3;
     }
 
     &--p2 {
       background: $color-blue-light;
+      z-index: 2;
+      @include respond(tab-port) {
+        transform: translateY(2rem) rotate(45deg);
+      }
     }
 
     &--p4 {
-      background: url(../../img/business.png) rgba($bg-color-blue-dark, 0.35);
+      background: url(../../img/business.png) rgba($bg-color-blue-dark, 0.45);
       background-size: cover;
       background-position: center;
       background-blend-mode: multiply;
+      z-index: 3;
     }
 
     &:hover {
